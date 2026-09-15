@@ -1019,9 +1019,6 @@ function openPinModal(target){
   if(titleEl && subEl){
     if(pinTarget === "delete"){
       titleEl.textContent = "Delete Workbook";
-      subEl.textContent = currentWorkbookMeta
-        ? `Enter PIN 4419 to remove "${currentWorkbookMeta.fileName}" and return to demo data`
-        : "Enter PIN 4419 to delete uploaded data and revert to demo data";
     } else {
       titleEl.textContent = "Secure Upload";
       subEl.textContent = "Enter your 4-digit access code to upload a workbook";
